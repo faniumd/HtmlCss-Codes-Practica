@@ -6,38 +6,30 @@
 }
 body{
     background: linear-gradient(to bottom, hsl(61, 100%, 50%), #ff0000);
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
 }
 
 .header-descripcion{
     display:flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .caja-descripcion {
     padding: 2rem;
     border-radius: 15px;
-    width: 90%;
-    max-width: 7000px;
+    width: 80%;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    background-color: gold;
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 
 .contenedor-personajes {
     display: grid;
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
-    justify-content: center;
-    margin-top: 80px;
-
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .tarjeta-saitama {
@@ -46,7 +38,6 @@ body{
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    min-height: 500px;
 }
 
 .tarjeta-tatsumaki{
@@ -80,6 +71,10 @@ body{
     font-weight: bold;
 }
 
+.caja-descripcion{
+    background-color: gold;
+}
+
 .caja-descripcion:hover{
     background: linear-gradient(to bottom, hsl(61, 100%, 50%), #ff0000);
     transition: all 0.3s ease-in-out;
@@ -103,71 +98,6 @@ body{
 
 .footer-personal{
     text-align: center;
-    margin: 500px auto 0 auto;
+    margin-bottom: auto;
     padding-bottom: 20px; 
-    
-}
-
-
-.layout-sidebar {
-    display: flex;
-}
-
-.sidebar-opm {
-    width: 250px;
-    background: #000;
-    color: gold;
-    height: 100vh;
-    padding: 2rem;
-    position: fixed; 
-}
-
-
-.contenido-derecha {
-    margin-left: 250px;
-    width: calc(100% - 250px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-@keyframes colorSaitamaNeon {
-    100% {
-        color: #ffff00;
-        text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00;
-    }
-}
-
-@keyframes colorTatsumakiNeon {
-    100% {
-        color: #00ff1a;
-        text-shadow: 0 0 5px #00ff1a, 0 0 10px #00ff1a;
-    }
-}
-
-@keyframes colorGenosNeon {
-    100% {
-        color: #6f6f6f;
-        text-shadow: 0 0 5px #6f6f6f, 0 0 10px #6f6f6f;
-    }
-}
-
-
-.nombre-saitama{
-    animation: colorSaitamaNeon 1s infinite alternate;
-}
-
-
-.nombre-tatsumaki{
-    animation: colorTatsumakiNeon 1s infinite alternate;
-}
-
-.nombre-genos{
-    animation: colorGenosNeon 1s infinite alternate;
-}
-
-.desc-saitama{
-    p{
-        font-family: fantasy;
-    }
 }
