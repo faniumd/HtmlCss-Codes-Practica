@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body{
+    background: linear-gradient(to bottom, hsl(61, 100%, 50%), #ff0000);
+    height: 100vh;
+    margin: 0;
+}
+
+.header-descripcion{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.caja-descripcion {
+    padding: 2rem;
+    border-radius: 15px;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contenedor-personajes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tarjeta-saitama {
+    background: linear-gradient(to bottom, hsl(61, 100%, 50%), #ff0000);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.tarjeta-tatsumaki{
+    background: linear-gradient(to bottom, hsl(120, 100%, 50%), #ffffff);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.tarjeta-genos {
+    background: linear-gradient(to bottom, hwb(0 0% 100%), #fffb00);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.tarjeta-personaje img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+
+.footer-personal {
+    text-align: left; 
+    margin-top: 4rem;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.caja-descripcion{
+    background-color: gold;
+}
+
+.caja-descripcion:hover{
+    background: linear-gradient(to bottom, hsl(61, 100%, 50%), #ff0000);
+    transition: all 0.3s ease-in-out;
+}
+
+.tarjeta-saitama:hover{
+    transform: translateY(-10px);
+    background: linear-gradient(to bottom, hsl(61, 100%, 50%), #ffffff);
+    transition: all 0.3s ease-in-out;
+}
+.tarjeta-tatsumaki:hover{
+    transform: translateY(-10px);
+    background: linear-gradient(to bottom, hsl(0, 0%, 100%), #2bff00);
+    transition: all 0.3s ease-in-out;
+}
+.tarjeta-genos:hover{
+    transform: translateY(-10px);
+    background: linear-gradient(to bottom, hsl(0, 0%, 0%), #ffffff);
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-personal{
+    text-align: center;
+    margin-bottom: auto;
+    padding-bottom: 20px; 
+}
