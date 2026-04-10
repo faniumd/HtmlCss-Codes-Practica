@@ -137,3 +137,51 @@ body {
 @keyframes neon { from { opacity: 0.8; } to { opacity: 1; text-shadow: 0 0 20px white; } }
 
 .footer-personal { padding: 20px; color: white; text-align: center; }
+
+.footer-personal {
+    background-color: #1a1a1a; 
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: sans-serif;
+    width: 900px;
+    height: 150px;
+}
+
+.footer-descripcion {
+    max-width: 600px;
+    margin: 0 auto 20px; 
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333; 
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footer-links a {
+    color: #ffde59;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    margin: 0 8px;
+    color: #555;
+}
