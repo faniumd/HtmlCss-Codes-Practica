@@ -1,0 +1,86 @@
+/* Estilos del contenedor Padre */
+.contenedor {
+    display: flex; /* Activa Flexbox */
+    
+    /* --- CAMBIA LA DIRECCIÓN AQUÍ --- */
+    flex-direction: row;            /* Opción A: Fila normal (izquierda a derecha) */
+    /* flex-direction: row-reverse;    Opción B: Fila invertida (derecha a izquierda) */
+    /* flex-direction: column;         Opción C: Columna (arriba hacia abajo) */
+    /* flex-direction: column-reverse; Opción D: Columna invertida (abajo hacia arriba) */
+
+    background-color: yellowgreen;
+    padding: 20px;
+    border: 3px dashed #000000;
+    gap: 10px; /* Espacio entre las cajas */
+}
+
+.contenedor:hover{
+    background-color: rgb(191, 247, 81);
+}
+
+/* Estilos de los hijos (Cajas) */
+.caja {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;       /* Usamos flex también para centrar el número */
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.caja:hover{
+    background-color: aquamarine;
+}
+
+.contenedor, .columnas{
+    background-color: yellowgreen;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.columnas:hover{
+    background-color: rgb(191, 247, 81);
+}
+
+.columnas{
+    display: flex;
+    border: 3px dashed #000000;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.contenedor-izquierda{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 3px dashed #000000;
+    background-color: yellowgreen;
+    padding: 20px;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.contenedor-izquierda:hover{
+    background-color: rgb(191, 247, 81);
+}
+
+
+.contenedor-reversa{
+    display: flex;
+    flex-direction: column-reverse;
+    border: 3px dashed #000000;
+    background-color: yellowgreen;
+    padding: 20px;
+    gap: 15px;
+    margin-bottom: 30px;
+
+}
+
+.contenedor-reversa:hover{
+    background-color: rgb(191, 247, 81);
+}
