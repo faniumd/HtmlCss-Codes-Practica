@@ -1,24 +1,20 @@
-/* Estilos del contenedor Padre */
+
 .contenedor {
-    display: flex; /* Activa Flexbox */
+    display: flex; 
     
-    /* --- CAMBIA LA DIRECCIÓN AQUÍ --- */
-    flex-direction: row;            /* Opción A: Fila normal (izquierda a derecha) */
-    /* flex-direction: row-reverse;    Opción B: Fila invertida (derecha a izquierda) */
-    /* flex-direction: column;         Opción C: Columna (arriba hacia abajo) */
-    /* flex-direction: column-reverse; Opción D: Columna invertida (abajo hacia arriba) */
+    flex-direction: row;         
 
     background-color: yellowgreen;
     padding: 20px;
     border: 3px dashed #000000;
-    gap: 10px; /* Espacio entre las cajas */
+    gap: 10px; 
 }
 
 .contenedor:hover{
     background-color: rgb(191, 247, 81);
 }
 
-/* Estilos de los hijos (Cajas) */
+
 .caja {
     width: 100px;
     height: 100px;
@@ -26,7 +22,7 @@
     color: white;
     font-size: 2rem;
     font-weight: bold;
-    display: flex;       /* Usamos flex también para centrar el número */
+    display: flex;       
     justify-content: center;
     align-items: center;
     border-radius: 8px;
