@@ -10,6 +10,62 @@ body{
     margin: 0;
 }
 
+.search-bar{
+    display: flex;
+    width: 500px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    position: absolute;
+    left: 2.5%;
+    top: 55%;
+}
+
+@media (max-width: 1660px){
+    .search-bar{
+        position: static;
+        transform: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        background: #1a1a1a;
+    }
+
+}
+
+.search-bar input{
+    flex: 1;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.search-bar button{
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff3c00;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover{
+    background-color: #ffee00;
+    box-shadow: 0 0 10px rgb(247, 100, 1);
+}
+
+.search-bar:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    background-color: #f9f9f9;
+}
+
 .header-descripcion{
     display:flex;
     justify-content: center;

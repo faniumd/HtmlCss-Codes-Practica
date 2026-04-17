@@ -10,35 +10,74 @@ body{
     min-height: 100vh;
     display: grid;
     place-content: center;
+    font-family: sans-serif;
 }
 
-#reserver{
-    position: absolute;
+#reserver, img{
+    width: 100%;
+    height: 100%;
 }
 
 #descripcion{
     position: absolute;
     bottom: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(transparent, rgba(0,0,0,0,9));
+    color: white;
     text-align: center;
-    padding: 10px 5px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     gap: 10px;
-    height: 30%;
 }
 
 :root{
 
 }
 
+#btn_reserver{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 8px 15px;
+    background: #740286;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10; 
+}
+
 #card{
     width: 340px;
     height: 500px;
-    border-radius: 8px;
+    border-radius: 15px;
     position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0,5);
 }
 
-img{
-    width: 100%;
-    height: 100%;
+img {
+    object-fit: cover;
+    display: block;
+}
+
+.Boros-name{
+    color: purple; text-shadow: 0 0 10px white; animation: neon 1s infinite alternate; font-weight: bold;
+    
+}
+
+@keyframes neon { 
+    from { 
+        opacity: 0.8; 
+        color: purple;
+        text-shadow: 0 0 10px purple;
+    } 
+    to { 
+        opacity: 1; 
+        color: white;
+        text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px #740286; 
+    } 
 }
